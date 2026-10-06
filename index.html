@@ -1,0 +1,1940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Discover El Nido, Palawan | Island Hopping &amp; Travel Guide</title>
+    <meta name="description" content="Plan your trip to El Nido, Palawan: attractions and activities, gallery, food and culture, travel guide, accommodations and events around the Bacuit Archipelago.">
+    <meta name="theme-color" content="#007f86">
+
+    <meta property="og:title" content="Discover El Nido, Palawan">
+    <meta property="og:description" content="Crystal-clear waters, limestone cliffs, hidden lagoons and beaches. Your practical guide to El Nido.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/palm-beach-panorama.jpg">
+
+    <style>
+        :root {
+            --ink: #173f43;
+            --ink-soft: #4d686b;
+            --teal-900: #073b3f;
+            --teal-700: #006d73;
+            --teal-600: #007f86;
+            --teal-500: #00a7a7;
+            --mint-50: #f7ffff;
+            --mint-100: #eaffff;
+            --mint-200: #dceeee;
+            --sand: #fff8ec;
+            --radius: 18px;
+            --shadow: 0 6px 24px rgba(0, 45, 50, 0.10);
+            --nav-h: 68px;
+            --serif: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif;
+        }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: var(--nav-h);
+        }
+
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--ink);
+            background: var(--mint-50);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        h1,
+        h2 {
+            font-family: var(--serif);
+            font-weight: 700;
+        }
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid #ffb703;
+            outline-offset: 3px;
+            border-radius: 6px;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: 12px;
+            top: -60px;
+            background: #fff;
+            color: var(--teal-700);
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: 700;
+            z-index: 2000;
+            transition: top .2s;
+        }
+
+        .skip-link:focus {
+            top: 12px;
+        }
+
+        /* NAVIGATION: transparent over the hero, solid once you scroll */
+
+        nav {
+            position: fixed;
+            inset: 0 0 auto 0;
+            height: var(--nav-h);
+            padding: 0 4%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: linear-gradient(180deg, rgba(0, 30, 34, 0.55), rgba(0, 30, 34, 0));
+            transition: background .3s, box-shadow .3s;
+        }
+
+        nav.solid {
+            background: rgba(255, 255, 255, 0.94);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 14px rgba(0, 0, 0, 0.10);
+        }
+
+        .logo {
+            font-family: var(--serif);
+            font-size: 26px;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: .3px;
+            text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+            transition: color .3s;
+        }
+
+        nav.solid .logo {
+            color: var(--teal-600);
+            text-shadow: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14.5px;
+            font-weight: 600;
+            padding: 6px 2px;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+            text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+            transition: color .2s, border-color .2s;
+        }
+
+        nav.solid .nav-links a {
+            color: var(--ink);
+            text-shadow: none;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            border-color: var(--teal-500);
+        }
+
+        nav.solid .nav-links a:hover,
+        nav.solid .nav-links a.active {
+            color: var(--teal-600);
+        }
+
+        .nav-links a.nav-cta {
+            background: var(--teal-500);
+            color: #fff;
+            padding: 9px 20px;
+            border-radius: 999px;
+            border: 0;
+            text-shadow: none;
+            transition: background .2s, transform .2s;
+        }
+
+        nav.solid .nav-links a.nav-cta {
+            color: #fff;
+        }
+
+        .nav-links a.nav-cta:hover,
+        .nav-links a.nav-cta.active {
+            background: var(--teal-600);
+            transform: translateY(-1px);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: 0;
+            width: 44px;
+            height: 44px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 28px;
+            line-height: 1;
+            text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+        }
+
+        nav.solid .menu-toggle {
+            color: var(--ink);
+            text-shadow: none;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 100svh;
+            background-color: var(--teal-700);
+            background-image:
+                linear-gradient(180deg, rgba(0, 45, 50, 0.40), rgba(0, 45, 50, 0.58)),
+                url("images/palm-beach-panorama.jpg");
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: calc(var(--nav-h) + 40px) 20px 60px;
+        }
+
+        .hero-content {
+            max-width: 860px;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: rgba(255, 255, 255, 0.18);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            padding: 6px 16px;
+            border-radius: 999px;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 6.5vw, 66px);
+            line-height: 1.08;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 18px rgba(0, 0, 0, 0.4);
+        }
+
+        .hero p {
+            font-size: clamp(17px, 2.2vw, 21px);
+            margin: 0 auto 32px;
+            max-width: 700px;
+            text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .button {
+            display: inline-block;
+            background: var(--teal-500);
+            color: #fff;
+            padding: 14px 30px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+            margin: 5px;
+            border: 2px solid var(--teal-500);
+            cursor: pointer;
+            font-size: 16px;
+            font-family: inherit;
+            transition: transform .25s, background .25s, box-shadow .25s;
+        }
+
+        .button:hover {
+            background: var(--teal-600);
+            border-color: var(--teal-600);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        .button.secondary {
+            background: transparent;
+            border-color: #fff;
+            color: #fff;
+        }
+
+        .button.secondary:hover {
+            background: #fff;
+            color: var(--teal-600);
+        }
+
+        .button.outline {
+            background: transparent;
+            color: var(--teal-600);
+            border-color: var(--teal-600);
+        }
+
+        .button.outline:hover {
+            background: var(--teal-600);
+            color: #fff;
+        }
+
+        /* GENERAL SECTIONS */
+
+        section {
+            padding: 96px 6%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .section-title h2,
+        .about-text h2 {
+            font-size: clamp(30px, 4vw, 42px);
+            line-height: 1.2;
+            color: var(--teal-700);
+            margin-bottom: 12px;
+        }
+
+        .section-title p {
+            color: var(--ink-soft);
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .subheading {
+            font-family: var(--serif);
+            font-size: 26px;
+            color: var(--teal-700);
+            margin: 64px 0 24px;
+            text-align: center;
+        }
+
+        .tag {
+            align-self: flex-start;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: .6px;
+            text-transform: uppercase;
+            color: var(--teal-700);
+            background: var(--mint-100);
+            padding: 3px 10px;
+            border-radius: 999px;
+            margin-bottom: 10px;
+        }
+
+        /* ABOUT */
+
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 56px;
+            align-items: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: var(--radius);
+            box-shadow: 0 14px 36px rgba(0, 45, 50, 0.22);
+        }
+
+        .about-text p {
+            margin-bottom: 18px;
+            color: var(--ink-soft);
+        }
+
+        .stats {
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+            margin: 26px 0 30px;
+        }
+
+        .stat strong {
+            display: block;
+            font-size: 28px;
+            color: var(--teal-600);
+            line-height: 1.1;
+        }
+
+        .stat span {
+            font-size: 14px;
+            color: var(--ink-soft);
+        }
+
+        /* ATTRACTIONS */
+
+        .attractions {
+            background: var(--mint-100);
+        }
+
+        .spots {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .spot-card {
+            background: #fff;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform .3s, box-shadow .3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .spot-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 34px rgba(0, 45, 50, 0.18);
+        }
+
+        .spot-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background: var(--teal-600);
+        }
+
+        .spot-content {
+            padding: 22px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .spot-content h3 {
+            color: var(--teal-600);
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+
+        .spot-content p {
+            color: var(--ink-soft);
+            font-size: 15px;
+        }
+
+        .tours {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .tour {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 24px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--teal-500);
+        }
+
+        .tour h4 {
+            font-size: 19px;
+            color: var(--teal-600);
+            margin-bottom: 10px;
+        }
+
+        .tour ul {
+            list-style: none;
+            font-size: 15px;
+            color: var(--ink-soft);
+        }
+
+        .tour li {
+            padding: 5px 0 5px 22px;
+            position: relative;
+        }
+
+        .tour li::before {
+            content: "";
+            position: absolute;
+            left: 2px;
+            top: 15px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--teal-500);
+        }
+
+        .tour p {
+            font-size: 15px;
+            color: var(--ink-soft);
+        }
+
+        .note {
+            text-align: center;
+            font-size: 14px;
+            color: var(--ink-soft);
+            margin-top: 20px;
+        }
+
+        .activities {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .activity {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 26px 22px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .activity .icon {
+            font-size: 34px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .activity h4 {
+            color: var(--teal-600);
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        .activity p {
+            font-size: 15px;
+            color: var(--ink-soft);
+        }
+
+        /* GALLERY */
+
+        .gallery-grid {
+            column-count: 3;
+            column-gap: 16px;
+        }
+
+        .g-item {
+            display: block;
+            width: 100%;
+            margin: 0 0 16px;
+            padding: 0;
+            border: 0;
+            border-radius: 14px;
+            overflow: hidden;
+            position: relative;
+            cursor: zoom-in;
+            break-inside: avoid;
+            background: var(--teal-600);
+            box-shadow: var(--shadow);
+        }
+
+        .g-item img {
+            width: 100%;
+            height: auto;
+            transition: transform .5s ease;
+        }
+
+        .g-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .g-cap {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 30px 14px 12px;
+            text-align: left;
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            background: linear-gradient(180deg, rgba(0, 30, 34, 0), rgba(0, 30, 34, 0.72));
+            opacity: 0;
+            transform: translateY(8px);
+            transition: opacity .3s, transform .3s;
+        }
+
+        .g-item:hover .g-cap,
+        .g-item:focus-visible .g-cap {
+            opacity: 1;
+            transform: none;
+        }
+
+        dialog.lightbox {
+            border: 0;
+            background: transparent;
+            max-width: 100vw;
+            max-height: 100vh;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        dialog.lightbox::backdrop {
+            background: rgba(0, 20, 24, 0.92);
+        }
+
+        .lb-inner {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 56px 64px 28px;
+        }
+
+        .lb-inner img {
+            max-width: 100%;
+            max-height: calc(100vh - 150px);
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .lb-caption {
+            margin-top: 14px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .lb-btn {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.14);
+            color: #fff;
+            border: 0;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            font-size: 26px;
+            line-height: 1;
+            cursor: pointer;
+            transition: background .2s;
+        }
+
+        .lb-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .lb-close {
+            top: 16px;
+            right: 16px;
+        }
+
+        .lb-prev {
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .lb-next {
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* FOOD & CULTURE */
+
+        .culture {
+            background: var(--sand);
+        }
+
+        .culture-intro {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 40px;
+            align-items: start;
+            margin-bottom: 8px;
+        }
+
+        .culture-intro h3 {
+            font-family: var(--serif);
+            font-size: 26px;
+            color: var(--teal-700);
+            margin-bottom: 14px;
+        }
+
+        .culture-intro p {
+            color: var(--ink-soft);
+            margin-bottom: 14px;
+        }
+
+        .phrases {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 26px;
+            box-shadow: var(--shadow);
+        }
+
+        .phrases h4 {
+            color: var(--teal-600);
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        .phrases dl {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 8px 18px;
+            font-size: 15px;
+        }
+
+        .phrases dt {
+            font-weight: 700;
+            color: var(--teal-700);
+        }
+
+        .phrases dd {
+            color: var(--ink-soft);
+        }
+
+        .foods {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .food {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 26px 22px;
+            box-shadow: var(--shadow);
+        }
+
+        .food .icon {
+            font-size: 32px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .food h4 {
+            color: var(--teal-600);
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        .food p {
+            font-size: 15px;
+            color: var(--ink-soft);
+        }
+
+        /* TRAVEL GUIDE */
+
+        .guide {
+            background: #f0ffff;
+        }
+
+        .guide-table {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .guide-table th,
+        .guide-table td {
+            padding: 20px 24px;
+            text-align: left;
+            vertical-align: top;
+            border-bottom: 1px solid var(--mint-200);
+        }
+
+        .guide-table th {
+            background: var(--teal-600);
+            color: #fff;
+        }
+
+        .guide-table td:first-child {
+            width: 28%;
+            color: var(--teal-700);
+            white-space: nowrap;
+        }
+
+        .guide-table tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .guide-table tbody tr:hover {
+            background: #f6ffff;
+        }
+
+        .announcement-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .announcement {
+            background: #fff;
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--teal-500);
+        }
+
+        .announcement h3 {
+            color: var(--teal-600);
+            margin-bottom: 12px;
+            font-size: 19px;
+        }
+
+        .announcement p {
+            color: var(--ink-soft);
+            font-size: 15.5px;
+        }
+
+        /* ACCOMMODATIONS */
+
+        .stay-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .stay-card {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stay-card h3 {
+            color: var(--teal-600);
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .stay-card p {
+            font-size: 15px;
+            color: var(--ink-soft);
+            margin-bottom: 10px;
+        }
+
+        .stay-card .meta {
+            margin-top: auto;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--teal-700);
+        }
+
+        .tips {
+            max-width: 860px;
+            margin: 44px auto 0;
+            background: var(--mint-100);
+            border-radius: var(--radius);
+            padding: 28px 32px;
+        }
+
+        .tips h3 {
+            color: var(--teal-700);
+            margin-bottom: 10px;
+            font-size: 19px;
+        }
+
+        .tips ul {
+            padding-left: 20px;
+            color: var(--ink-soft);
+        }
+
+        .tips li {
+            margin: 6px 0;
+        }
+
+        /* EVENTS */
+
+        .events {
+            background: var(--mint-100);
+        }
+
+        .event-list {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            gap: 18px;
+        }
+
+        .event {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 22px;
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 24px 28px;
+            box-shadow: var(--shadow);
+            align-items: start;
+        }
+
+        .event .when {
+            font-family: var(--serif);
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--teal-600);
+            line-height: 1.3;
+        }
+
+        .event h3 {
+            font-size: 19px;
+            margin-bottom: 6px;
+        }
+
+        .event p {
+            color: var(--ink-soft);
+            font-size: 15.5px;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            background-color: var(--teal-900);
+            background-image:
+                linear-gradient(rgba(0, 55, 60, 0.82), rgba(0, 55, 60, 0.86)),
+                url("images/lagoons-kayaks-aerial.jpg");
+            background-position: center;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 110px 6%;
+        }
+
+        .contact h2 {
+            font-size: clamp(32px, 5vw, 48px);
+            margin-bottom: 15px;
+        }
+
+        .contact>.container>p {
+            font-size: 19px;
+            margin: 0 auto 36px;
+            max-width: 620px;
+        }
+
+        .contact-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto 36px;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: var(--radius);
+            padding: 24px 18px;
+            -webkit-backdrop-filter: blur(6px);
+            backdrop-filter: blur(6px);
+        }
+
+        .contact-card .icon {
+            font-size: 28px;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .contact-card h3 {
+            font-size: 17px;
+            margin-bottom: 4px;
+        }
+
+        .contact-card a,
+        .contact-card span.val {
+            color: #fff;
+            font-size: 15px;
+            word-break: break-word;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: var(--teal-900);
+            color: #cfe9ea;
+            text-align: center;
+            padding: 34px 20px 40px;
+            font-size: 15px;
+        }
+
+        footer strong {
+            color: #fff;
+            font-size: 18px;
+        }
+
+        footer p {
+            margin: 4px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px 22px;
+            margin: 14px 0 12px;
+        }
+
+        .footer-links a {
+            color: #cfe9ea;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        /* BACK TO TOP */
+
+        .to-top {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            border: 0;
+            background: var(--teal-600);
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: opacity .3s, transform .3s, background .2s;
+            z-index: 900;
+        }
+
+        .to-top.show {
+            opacity: 1;
+            pointer-events: auto;
+            transform: none;
+        }
+
+        .to-top:hover {
+            background: var(--teal-700);
+        }
+
+        /* SCROLL REVEAL */
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity .7s ease, transform .7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            .reveal {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+
+            .button,
+            .spot-card,
+            .g-item img {
+                transition: none;
+            }
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 1240px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: var(--nav-h);
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                background: #fff;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.10);
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height .3s ease;
+            }
+
+            .nav-links.open {
+                max-height: 560px;
+            }
+
+            .nav-links a,
+            nav.solid .nav-links a {
+                display: block;
+                color: var(--ink);
+                text-shadow: none;
+                font-size: 16px;
+                padding: 15px 6%;
+                border-bottom: 1px solid var(--mint-200);
+                border-radius: 0;
+            }
+
+            .nav-links a.active {
+                color: var(--teal-600);
+                border-bottom-color: var(--mint-200);
+                background: var(--mint-100);
+            }
+
+            .nav-links a.nav-cta,
+            nav.solid .nav-links a.nav-cta {
+                margin: 14px 6%;
+                text-align: center;
+                color: #fff;
+                border-radius: 999px;
+                background: var(--teal-500);
+            }
+
+            .nav-links a.nav-cta.active {
+                background: var(--teal-600);
+            }
+        }
+
+        @media (max-width: 1000px) {
+
+            .spots,
+            .tours,
+            .activities,
+            .foods,
+            .stay-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .announcement-container,
+            .about,
+            .culture-intro,
+            .contact-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .about {
+                gap: 36px;
+            }
+
+            .gallery-grid {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 700px) {
+            section {
+                padding: 72px 5%;
+            }
+
+            .spots,
+            .tours,
+            .activities,
+            .foods,
+            .stay-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                column-count: 1;
+            }
+
+            .event {
+                grid-template-columns: 1fr;
+                gap: 6px;
+            }
+
+            .lb-inner {
+                padding: 64px 12px 20px;
+            }
+
+            .lb-prev {
+                left: 4px;
+            }
+
+            .lb-next {
+                right: 4px;
+            }
+
+            /* Table becomes stacked cards on phones */
+            .guide-table,
+            .guide-table tbody,
+            .guide-table tr,
+            .guide-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .guide-table thead {
+                position: absolute;
+                left: -9999px;
+            }
+
+            .guide-table tr {
+                border-bottom: 1px solid var(--mint-200);
+                padding: 14px 0;
+            }
+
+            .guide-table td {
+                border: 0;
+                padding: 4px 20px;
+            }
+
+            .guide-table td:first-child {
+                width: 100%;
+                white-space: normal;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#about">Skip to content</a>
+
+    <!-- NAVIGATION -->
+
+    <nav id="navbar" aria-label="Main">
+        <a class="logo" href="#home">El Nido</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">&#9776;</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About the Place</a></li>
+            <li><a href="#attractions">Attractions &amp; Activities</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#culture">Food &amp; Culture</a></li>
+            <li><a href="#guide">Travel Guide</a></li>
+            <li><a href="#stay">Accommodations</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a class="nav-cta" href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- HERO -->
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+
+            <span class="eyebrow">Palawan, Philippines</span>
+
+            <h1>Escape to Paradise: Discover El Nido</h1>
+
+            <p>
+                Crystal-clear waters, majestic limestone cliffs, hidden lagoons,
+                and breathtaking beaches in one of the Philippines' most
+                beautiful destinations.
+            </p>
+
+            <a href="#attractions" class="button">Explore Attractions</a>
+            <a href="#guide" class="button secondary">Plan Your Trip</a>
+
+        </div>
+    </header>
+
+
+    <!-- 1. ABOUT THE PLACE -->
+
+    <section id="about">
+        <div class="container about">
+
+            <div class="about-image reveal">
+                <img src="images/lagoons-aerial.jpg"
+                     alt="Aerial view of hidden lagoons, limestone cliffs and boats in El Nido's Bacuit Bay"
+                     width="1400" height="933" loading="lazy">
+            </div>
+
+            <div class="about-text reveal">
+
+                <h2>The Jewel of the Philippines</h2>
+
+                <p>
+                    El Nido is a tropical paradise renowned for its towering
+                    limestone cliffs, turquoise waters, pristine beaches, and
+                    spectacular marine life.
+                </p>
+
+                <p>
+                    As the gateway to the Bacuit Archipelago, it offers an
+                    extraordinary escape for travelers seeking adventure,
+                    relaxation, and natural beauty. Kayak through hidden
+                    lagoons or snorkel among colorful coral reefs; every
+                    day reveals another side of the island.
+                </p>
+
+                <div class="stats">
+                    <div class="stat"><strong>45</strong><span>islands &amp; islets in Bacuit Bay</span></div>
+                    <div class="stat"><strong>Dec&ndash;May</strong><span>generally the drier season</span></div>
+                </div>
+
+                <a href="#attractions" class="button outline">See What to Do</a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 2. ATTRACTIONS & ACTIVITIES -->
+
+    <section class="attractions" id="attractions">
+        <div class="container">
+
+            <div class="section-title reveal">
+                <h2>Attractions &amp; Activities</h2>
+                <p>From postcard lagoons to quiet beaches, here is what to see and do around the Bacuit Archipelago.</p>
+            </div>
+
+            <div class="spots">
+
+                <article class="spot-card reveal">
+                    <img src="images/big-lagoon-kayaks.jpg" alt="Kayakers paddling across the turquoise water of Big Lagoon, El Nido" width="1400" height="931" loading="lazy">
+                    <div class="spot-content">
+                        <span class="tag">Kayaking</span>
+                        <h3>Big Lagoon</h3>
+                        <p>
+                            Paddle through brilliant turquoise water ringed by
+                            towering limestone cliffs. Ideal for kayaking and
+                            photography.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="spot-card reveal">
+                    <img src="images/hidden-beach-cove.jpg" alt="A small white-sand beach tucked into a cove between limestone cliffs" width="1200" height="900" loading="lazy">
+                    <div class="spot-content">
+                        <span class="tag">Hidden gem</span>
+                        <h3>Secret Beach</h3>
+                        <p>
+                            A secluded beach tucked behind dramatic rock
+                            formations, reached through a narrow opening when
+                            sea conditions allow.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="spot-card reveal">
+                    <img src="images/nacpan-beach.jpg" alt="Aerial view of the long golden sand of Nacpan Beach with small islets offshore" width="880" height="450" loading="lazy">
+                    <div class="spot-content">
+                        <span class="tag">Beach &amp; sunset</span>
+                        <h3>Nacpan Beach</h3>
+                        <p>
+                            Golden-white sand lined with palm trees. Great for
+                            swimming, long walks, and beautiful sunsets.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="spot-card reveal">
+                    <img src="images/snorkeling-coral.jpg" alt="A snorkeler swimming over a colorful coral reef in clear water" width="780" height="521" loading="lazy">
+                    <div class="spot-content">
+                        <span class="tag">Snorkeling</span>
+                        <h3>Shimizu Island</h3>
+                        <p>
+                            Snorkel over colorful coral and marine life in the
+                            clear waters surrounding this island.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+            <h3 class="subheading reveal">Island-Hopping Tours</h3>
+
+            <div class="tours">
+
+                <div class="tour reveal">
+                    <h4>Tour A</h4>
+                    <ul>
+                        <li>Small &amp; Big Lagoon</li>
+                        <li>Secret Lagoon</li>
+                        <li>Shimizu Island</li>
+                        <li>7 Commando Beach</li>
+                    </ul>
+                </div>
+
+                <div class="tour reveal">
+                    <h4>Tour B</h4>
+                    <ul>
+                        <li>Snake Island</li>
+                        <li>Cudugnon Cave</li>
+                        <li>Cathedral Cave</li>
+                        <li>Pinagbuyutan Island</li>
+                    </ul>
+                </div>
+
+                <div class="tour reveal">
+                    <h4>Tour C</h4>
+                    <ul>
+                        <li>Hidden Beach</li>
+                        <li>Matinloc Shrine</li>
+                        <li>Secret Beach</li>
+                        <li>Helicopter Island</li>
+                    </ul>
+                </div>
+
+                <div class="tour reveal">
+                    <h4>Tour D</h4>
+                    <p>A quieter, less-visited route. Ask your operator for the current stops.</p>
+                </div>
+
+            </div>
+
+            <p class="note">Stops, inclusions and prices vary by operator and sea conditions. Confirm your itinerary when you book.</p>
+
+            <h3 class="subheading reveal">More Things to Do</h3>
+
+            <div class="activities">
+
+                <div class="activity reveal">
+                    <span class="icon" aria-hidden="true">🛶</span>
+                    <h4>Kayaking</h4>
+                    <p>Glide through lagoons and along the cliffs at your own pace.</p>
+                </div>
+
+                <div class="activity reveal">
+                    <span class="icon" aria-hidden="true">🤿</span>
+                    <h4>Snorkeling &amp; Diving</h4>
+                    <p>Explore reefs, coral gardens and dive sites across Bacuit Bay.</p>
+                </div>
+
+                <div class="activity reveal">
+                    <span class="icon" aria-hidden="true">🥾</span>
+                    <h4>Hiking</h4>
+                    <p>Climb Taraw Cliff for wide views over the town and the bay.</p>
+                </div>
+
+                <div class="activity reveal">
+                    <span class="icon" aria-hidden="true">🌅</span>
+                    <h4>Sunsets</h4>
+                    <p>Watch the sky turn gold from Nacpan Beach or the town shoreline.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 3. GALLERY -->
+
+    <section id="gallery">
+        <div class="container">
+
+            <div class="section-title reveal">
+                <h2>Gallery</h2>
+                <p>A look at El Nido's lagoons, beaches and reefs. Tap any photo to enlarge it.</p>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+
+                <button class="g-item" type="button" data-full="images/big-lagoon-kayaks.jpg" data-caption="Kayaks drifting across a turquoise lagoon">
+                    <img src="images/big-lagoon-kayaks.jpg" alt="Kayakers on turquoise lagoon water between limestone cliffs" loading="lazy">
+                    <span class="g-cap">Kayaks drifting across a turquoise lagoon</span>
+                </button>
+
+                <button class="g-item" type="button" data-full="images/hidden-beach-cove.jpg" data-caption="A hidden cove beach between limestone walls">
+                    <img src="images/hidden-beach-cove.jpg" alt="Aerial view of a small white-sand beach in a cove between limestone cliffs" loading="lazy">
+                    <span class="g-cap">A hidden cove beach between limestone walls</span>
+                </button>
+
+                <button class="g-item" type="button" data-full="images/palm-beach-panorama.jpg" data-caption="A palm-fringed white-sand beach in Bacuit Bay">
+                    <img src="images/palm-beach-panorama.jpg" alt="Panoramic aerial view of a white-sand beach with palm trees and a limestone cliff" loading="lazy">
+                    <span class="g-cap">A palm-fringed white-sand beach in Bacuit Bay</span>
+                </button>
+
+                <button class="g-item" type="button" data-full="images/snorkeling-coral.jpg" data-caption="Snorkeling over a healthy coral reef">
+                    <img src="images/snorkeling-coral.jpg" alt="A snorkeler swimming over coral in clear shallow water" loading="lazy">
+                    <span class="g-cap">Snorkeling over a healthy coral reef</span>
+                </button>
+
+                <button class="g-item" type="button" data-full="images/lagoons-aerial.jpg" data-caption="Lagoons and limestone karst from the air">
+                    <img src="images/lagoons-aerial.jpg" alt="Aerial view of lagoons, karst cliffs and the open sea" loading="lazy">
+                    <span class="g-cap">Lagoons and limestone karst from the air</span>
+                </button>
+
+                <button class="g-item" type="button" data-full="images/nacpan-beach.jpg" data-caption="Nacpan Beach: a long sweep of golden sand">
+                    <img src="images/nacpan-beach.jpg" alt="Aerial view of Nacpan Beach with palm trees and small islets" loading="lazy">
+                    <span class="g-cap">Nacpan Beach: a long sweep of golden sand</span>
+                </button>
+
+                <button class="g-item" type="button" data-full="images/bangka-boat-lagoon.jpg" data-caption="A traditional bangka boat in clear lagoon water">
+                    <img src="images/bangka-boat-lagoon.jpg" alt="A traditional outrigger boat entering a lagoon between tall limestone cliffs" loading="lazy">
+                    <span class="g-cap">A traditional bangka boat in clear lagoon water</span>
+                </button>
+
+                <button class="g-item" type="button" data-full="images/lagoons-kayaks-aerial.jpg" data-caption="Kayak trails winding through the lagoons">
+                    <img src="images/lagoons-kayaks-aerial.jpg" alt="Aerial view of kayaks on a winding turquoise channel between karst islands" loading="lazy">
+                    <span class="g-cap">Kayak trails winding through the lagoons</span>
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+        <button class="lb-btn lb-close" id="lbClose" type="button" aria-label="Close">&times;</button>
+        <button class="lb-btn lb-prev" id="lbPrev" type="button" aria-label="Previous photo">&#8249;</button>
+        <button class="lb-btn lb-next" id="lbNext" type="button" aria-label="Next photo">&#8250;</button>
+        <div class="lb-inner" id="lbInner">
+            <img id="lbImg" src="" alt="">
+            <p class="lb-caption" id="lbCaption"></p>
+        </div>
+    </dialog>
+
+
+    <!-- 4. FOOD & CULTURE -->
+
+    <section class="culture" id="culture">
+        <div class="container">
+
+            <div class="section-title reveal">
+                <h2>Food &amp; Culture</h2>
+                <p>Fresh from the sea, rooted in island life.</p>
+            </div>
+
+            <div class="culture-intro reveal">
+
+                <div>
+                    <h3>More Than a Beautiful View</h3>
+                    <p>
+                        El Nido takes its name from the Spanish word for
+                        &ldquo;nest,&rdquo; after the edible-nest swiftlets that build in the
+                        limestone cliffs. Life here has long been shaped by the
+                        sea, and fishing remains a way of life for many families.
+                    </p>
+                    <p>
+                        Local culture blends Cuyonon heritage with other
+                        communities across Palawan. Eating at family-run
+                        places, hiring local guides and buying from local
+                        makers is the best way to give something back.
+                    </p>
+                </div>
+
+                <div class="phrases">
+                    <h4>Useful Filipino Phrases</h4>
+                    <dl>
+                        <dt>Salamat</dt><dd>Thank you</dd>
+                        <dt>Magkano po?</dt><dd>How much is it?</dd>
+                        <dt>Opo</dt><dd>Yes (polite)</dd>
+                        <dt>Hindi po</dt><dd>No (polite)</dd>
+                        <dt>Masarap!</dt><dd>Delicious!</dd>
+                    </dl>
+                </div>
+
+            </div>
+
+            <h3 class="subheading reveal">What to Eat</h3>
+
+            <div class="foods">
+
+                <div class="food reveal">
+                    <span class="icon" aria-hidden="true">🐟</span>
+                    <h4>Fresh Seafood</h4>
+                    <p>Grilled fish, squid and prawns, often cooked fresh in town in the evenings or on the beach during tours.</p>
+                </div>
+
+                <div class="food reveal">
+                    <span class="icon" aria-hidden="true">🍋</span>
+                    <h4>Kinilaw</h4>
+                    <p>The Filipino take on ceviche: raw fish cured in vinegar or citrus with onion, ginger and chili.</p>
+                </div>
+
+                <div class="food reveal">
+                    <span class="icon" aria-hidden="true">🥜</span>
+                    <h4>Palawan Cashews</h4>
+                    <p>Palawan is known for its cashews. Pick up a bag as a snack for the boat or a gift to take home.</p>
+                </div>
+
+                <div class="food reveal">
+                    <span class="icon" aria-hidden="true">🍍</span>
+                    <h4>Tropical Fruit</h4>
+                    <p>Mango, pineapple and fresh fruit shakes are the perfect way to cool down after a day on the water.</p>
+                </div>
+
+            </div>
+
+            <p class="note">Eating responsibly: ask where the catch comes from and skip protected species such as sea turtles and giant clams.</p>
+
+        </div>
+    </section>
+
+
+    <!-- 5. TRAVEL GUIDE -->
+
+    <section class="guide" id="guide">
+        <div class="container">
+
+            <div class="section-title reveal">
+                <h2>Essential Guide for Visitors</h2>
+                <p>Everything you need to know before your El Nido adventure.</p>
+            </div>
+
+            <table class="guide-table reveal">
+                <thead>
+                    <tr>
+                        <th scope="col">What to Know</th>
+                        <th scope="col">Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Getting There</strong></td>
+                        <td>Fly directly to El Nido's Lio Airport, or fly into Puerto Princesa and take a land transfer of several hours. Check current flight and van schedules before you book.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Best Time to Visit</strong></td>
+                        <td>December to May is generally the drier season, popular for beach days and island-hopping.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Getting Around</strong></td>
+                        <td>Tricycles are convenient for short trips around town. Motorbikes and arranged transfers help you reach mainland attractions.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Connectivity</strong></td>
+                        <td>Wi-Fi and mobile signal vary by location. Download offline maps and key travel documents before you go.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ATMs &amp; Cash</strong></td>
+                        <td>ATMs can be limited or out of cash, and many small businesses are cash-only. Bring enough Philippine pesos for transport, activities, and remote areas.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>What to Bring</strong></td>
+                        <td>Reef-safe sunscreen, swimwear, comfortable footwear or water shoes, a waterproof bag, and a reusable water bottle.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="subheading reveal">Good to Know</h3>
+
+            <div class="announcement-container">
+
+                <div class="announcement reveal">
+                    <h3><span aria-hidden="true">🌱</span> Eco-Tourism Fee</h3>
+                    <p>
+                        Budget for the environmental fee charged for visiting
+                        El Nido's protected areas. Rates and payment
+                        procedures can change, so confirm the current details
+                        with your tour operator before traveling.
+                    </p>
+                </div>
+
+                <div class="announcement reveal">
+                    <h3><span aria-hidden="true">📅</span> Peak Season Advisory</h3>
+                    <p>
+                        Demand rises during the dry season and holidays. Book
+                        accommodation and preferred island tours early to get
+                        the dates you want.
+                    </p>
+                </div>
+
+                <div class="announcement reveal">
+                    <h3><span aria-hidden="true">♻️</span> Keep El Nido Beautiful</h3>
+                    <p>
+                        Bring a reusable water bottle, avoid disposable
+                        plastics, use reef-safe sunscreen, and take your waste
+                        with you.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 6. ACCOMMODATIONS -->
+
+    <section id="stay">
+        <div class="container">
+
+            <div class="section-title reveal">
+                <h2>Accommodations</h2>
+                <p>Where you stay shapes your trip. Here is how the main areas compare.</p>
+            </div>
+
+            <div class="stay-grid">
+
+                <article class="stay-card reveal">
+                    <span class="tag">Budget to mid-range</span>
+                    <h3>El Nido Town</h3>
+                    <p>The liveliest base, close to tour operators, restaurants, bars and shops. Hostels, guesthouses and hotels to suit most budgets.</p>
+                    <span class="meta">Best for: first-timers &amp; backpackers</span>
+                </article>
+
+                <article class="stay-card reveal">
+                    <span class="tag">Mid-range</span>
+                    <h3>Corong-Corong</h3>
+                    <p>A calmer stretch of shoreline just outside town with sunset views and a relaxed beachfront feel.</p>
+                    <span class="meta">Best for: sunsets &amp; quiet evenings</span>
+                </article>
+
+                <article class="stay-card reveal">
+                    <span class="tag">Remote</span>
+                    <h3>Nacpan &amp; Calitang</h3>
+                    <p>Beach huts and small resorts on a wide stretch of sand, a road trip from town. Facilities are simpler.</p>
+                    <span class="meta">Best for: slow, beachfront stays</span>
+                </article>
+
+                <article class="stay-card reveal">
+                    <span class="tag">Luxury</span>
+                    <h3>Island Resorts</h3>
+                    <p>Private-island resorts in Bacuit Bay, reached by boat transfer, with lagoons and reefs right on your doorstep.</p>
+                    <span class="meta">Best for: splurges &amp; honeymoons</span>
+                </article>
+
+            </div>
+
+            <div class="tips reveal">
+                <h3>Booking Tips</h3>
+                <ul>
+                    <li>Reserve early for December&ndash;May and for holiday weeks.</li>
+                    <li>Check the cancellation policy, since weather can change boat plans.</li>
+                    <li>Ask about boat transfers, power and Wi-Fi if you are staying outside town.</li>
+                    <li>Many places can arrange island-hopping tours, which saves you a step.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 7. EVENTS -->
+
+    <section class="events" id="events">
+        <div class="container">
+
+            <div class="section-title reveal">
+                <h2>Events &amp; Festivals</h2>
+                <p>Time your visit around local celebrations and seasonal highlights.</p>
+            </div>
+
+            <div class="event-list">
+
+                <div class="event reveal">
+                    <div class="when">Dates vary</div>
+                    <div>
+                        <h3>Lamin-Lamin Festival</h3>
+                        <p>El Nido's annual town festival, celebrating local culture and heritage with parades, performances and community events.</p>
+                    </div>
+                </div>
+
+                <div class="event reveal">
+                    <div class="when">March&ndash;April<br><small>(varies yearly)</small></div>
+                    <div>
+                        <h3>Holy Week (Semana Santa)</h3>
+                        <p>A major holiday in the Philippines. Expect large crowds and full bookings, and note that some businesses reduce hours around Good Friday.</p>
+                    </div>
+                </div>
+
+                <div class="event reveal">
+                    <div class="when">December&ndash;January</div>
+                    <div>
+                        <h3>Christmas &amp; New Year</h3>
+                        <p>One of the busiest times of the year, with festive nights in town. Book rooms and tours well in advance.</p>
+                    </div>
+                </div>
+
+                <div class="event reveal">
+                    <div class="when">Dry season<br><small>(December&ndash;May)</small></div>
+                    <div>
+                        <h3>Live Music &amp; Beach Nights</h3>
+                        <p>Beach bars and restaurants in town often host live music and sunset gatherings during the busy months.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="note">Events change from year to year. Ask your accommodation or the local tourism office for the latest schedule.</p>
+
+        </div>
+    </section>
+
+
+    <!-- 8. CONTACT US -->
+
+    <section class="contact" id="contact">
+        <div class="container">
+
+            <h2>Your Paradise Is Waiting</h2>
+
+            <p>
+                Questions about tours, stays or planning your trip?
+                Get in touch and we will help you plan.
+            </p>
+
+            <!-- Replace the placeholder details below with your real contact info -->
+            <div class="contact-cards">
+
+                <div class="contact-card">
+                    <span class="icon" aria-hidden="true">✉️</span>
+                    <h3>Email</h3>
+                    <a href="mailto:elnido@example.com">elnido@example.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <span class="icon" aria-hidden="true">📞</span>
+                    <h3>Phone / WhatsApp</h3>
+                    <span class="val">+63 900 000 0000</span>
+                </div>
+
+                <div class="contact-card">
+                    <span class="icon" aria-hidden="true">📍</span>
+                    <h3>Location</h3>
+                    <span class="val">El Nido, Palawan, Philippines</span>
+                </div>
+
+            </div>
+
+            <a href="mailto:elnido@example.com" class="button">Email Us</a>
+            <a href="#attractions" class="button secondary">Browse Tours</a>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p><strong>Discover El Nido</strong></p>
+        <p>Explore. Experience. Preserve.</p>
+        <div class="footer-links">
+            <a href="#about">About the Place</a>
+            <a href="#attractions">Attractions &amp; Activities</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#culture">Food &amp; Culture</a>
+            <a href="#guide">Travel Guide</a>
+            <a href="#stay">Accommodations</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <p>&copy; 2026 El Nido Travel Guide. All rights reserved.</p>
+    </footer>
+
+    <button class="to-top" id="toTop" type="button" aria-label="Back to top">&uarr;</button>
+
+
+    <script>
+        // ---------- Nav: mobile menu + solid-on-scroll ----------
+        const navbar = document.getElementById('navbar');
+        const toggle = document.getElementById('menuToggle');
+        const links = document.getElementById('navLinks');
+        const toTop = document.getElementById('toTop');
+
+        function updateNav() {
+            const menuOpen = links.classList.contains('open');
+            navbar.classList.toggle('solid', window.scrollY > 40 || menuOpen);
+            toTop.classList.toggle('show', window.scrollY > 700);
+        }
+
+        function setMenu(open) {
+            links.classList.toggle('open', open);
+            toggle.setAttribute('aria-expanded', String(open));
+            toggle.innerHTML = open ? '&times;' : '&#9776;';
+            updateNav();
+        }
+
+        toggle.addEventListener('click', () => setMenu(!links.classList.contains('open')));
+        links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+        window.addEventListener('scroll', updateNav, { passive: true });
+        updateNav();
+
+        toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        // ---------- Highlight the current section in the nav ----------
+        const navAnchors = document.querySelectorAll('.nav-links a');
+        const spied = document.querySelectorAll('section[id]');
+        const spy = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    navAnchors.forEach(a =>
+                        a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id)
+                    );
+                }
+            });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        spied.forEach(s => spy.observe(s));
+
+        // ---------- Scroll reveal ----------
+        const reveals = document.querySelectorAll('.reveal');
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries, obs) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('visible');
+                        obs.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            reveals.forEach(el => io.observe(el));
+        } else {
+            reveals.forEach(el => el.classList.add('visible'));
+        }
+
+        // ---------- Gallery lightbox ----------
+        const items = Array.from(document.querySelectorAll('.g-item'));
+        const box = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lbImg');
+        const lbCaption = document.getElementById('lbCaption');
+        let current = 0;
+
+        function show(i) {
+            current = (i + items.length) % items.length;
+            const it = items[current];
+            lbImg.src = it.dataset.full;
+            lbImg.alt = it.querySelector('img').alt;
+            lbCaption.textContent = it.dataset.caption || '';
+        }
+
+        items.forEach((it, i) => it.addEventListener('click', () => {
+            show(i);
+            if (typeof box.showModal === 'function') box.showModal();
+        }));
+
+        document.getElementById('lbClose').addEventListener('click', () => box.close());
+        document.getElementById('lbPrev').addEventListener('click', () => show(current - 1));
+        document.getElementById('lbNext').addEventListener('click', () => show(current + 1));
+
+        // Click on the dark area (not the photo) closes the viewer
+        box.addEventListener('click', e => {
+            if (e.target === box || e.target.id === 'lbInner') box.close();
+        });
+
+        box.addEventListener('keydown', e => {
+            if (e.key === 'ArrowLeft') show(current - 1);
+            if (e.key === 'ArrowRight') show(current + 1);
+        });
+    </script>
+
+</body>
+
+</html>
